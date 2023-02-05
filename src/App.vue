@@ -1,7 +1,6 @@
-
 <template>
-    <Header />
-    <router-view />
+  <Header />
+  <router-view />
 </template>
 
 <script lang="ts">
@@ -15,8 +14,8 @@ export default {
 
 <style scoped lang="scss">
 .Header {
-    height: 24px;
-    padding: 1rem;
-    margin-bottom: 1rem;
+  height: 24px;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 </style>
