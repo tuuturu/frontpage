@@ -6,3 +6,6 @@ fmt:
 
 ci:
 	npx prettier --check .
+
+build:
+	npm run build
