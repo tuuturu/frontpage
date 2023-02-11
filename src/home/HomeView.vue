@@ -28,12 +28,13 @@ $gap: 250px;
 
   display: grid;
   grid-column: 800px 800px;
+  column-gap: 64px;
   grid-row: 800px 800px;
   grid-row-gap: $gap;
 }
 
 .item {
-  min-height: 400px;
+  min-height: 700px;
 
   background-color: #f5f5f5;
   padding: 1rem;
