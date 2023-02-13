@@ -1,10 +1,34 @@
 <template>
   <div class="Home">
-    <div class="item item-left">
-      <p>Tuuturu is an ambition.</p>
+    <div class="item">
+      <p class="bold">Tuuturu is ambition</p>
+      <p>
+        We strive for something better. Something more. More in terms of human
+        development. We've been blinded by technology instead of using
+        technology to improve core human mechanisms like democracy, education,
+        and health.
+      </p>
     </div>
-    <div class="item item-right">
-      <p>It is a dream.</p>
+
+    <div class="item">
+      <p class="bold">Tuuturu is dreaming</p>
+      <p>
+        Dreaming of accountability and transparency. When politicians makes
+        promises, it should be easy to prove or disprove their claims. Even if
+        the claims are abstract and hard to measure, it should be possible to
+        track progress. If the community makes a change, it should be easy to
+        see the consequences.
+      </p>
+    </div>
+
+    <div class="item">
+      <p class="bold">Tuuturu is hope</p>
+      <p>
+        Too many choices are made based on immediate gratification, be it this
+        year's budget, the current election period or to soothe the loud
+        minority. Let's give voices to the silent and unavoidable data that can
+        silence even the strongest rhetoricians.
+      </p>
     </div>
   </div>
 </template>
@@ -19,38 +43,40 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-$gap: 250px;
+$gap: 200px;
+
+p.bold {
+  font-weight: bold;
+}
 
 .Home {
-  margin: 0 8px;
-  margin-top: $gap;
+  margin-top: 8rem;
   height: 100%;
 
-  display: grid;
-  grid-column: 800px 800px;
-  column-gap: 64px;
-  grid-row: 800px 800px;
-  grid-row-gap: $gap;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 10rem;
 }
 
 .item {
-  min-height: 700px;
+  width: 50%;
 
   background-color: #f5f5f5;
-  padding: 1rem;
+  padding: 4rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem 0.1rem #f5f5f5;
+
+  text-align: left;
+
+  align-self: flex-start;
 }
 
-.item-left {
-  grid-column: 1 / 2;
-  grid-column-start: 1;
-  grid-row: 1;
+.item:not(:first-child) {
+  margin-top: 8rem;
 }
 
-.item-right {
-  grid-column: 2 / 3;
-  grid-row-start: 2;
-  grid-row: 2;
+.item:nth-child(2n) {
+  align-self: flex-end;
 }
 </style>
