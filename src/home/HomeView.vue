@@ -43,8 +43,6 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-$gap: 200px;
-
 p.bold {
   font-weight: bold;
 }
