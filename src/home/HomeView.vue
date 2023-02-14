@@ -60,12 +60,12 @@ p.bold {
 }
 
 .item {
-  width: 50%;
+  width: 70%;
 
   background-color: #f5f5f5;
   padding: 4rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem 0.1rem #f5f5f5;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.3rem 0.1rem #f5f5f5;
 
   text-align: left;
 
@@ -73,10 +73,31 @@ p.bold {
 }
 
 .item:not(:first-child) {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .item:nth-child(2n) {
   align-self: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+  .Home {
+    margin-top: 0.5rem;
+    padding: 0;
+  }
+
+  .item {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .item:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  .item:nth-child(2n) {
+    align-self: flex-start;
+  }
 }
 </style>
