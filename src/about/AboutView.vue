@@ -39,8 +39,18 @@
           <span class="bold">Bold</span>
           <p>
             - We dare to experiment, and when we do, we observe and understand
-            the consequences. Fucking up is celebrated, because without the
-            mistake, we wouldn't be able to learn from it.
+            the consequences. Fucking up is celebrated, for without the mistake,
+            we would be robbed of resulting information.
+          </p>
+        </li>
+
+        <li>
+          <span class="bold">Strength</span>
+          <p>
+            - Strength is protecting the weak. No one is strong in every sense
+            and we all need help from time to time. When you find yourself in a
+            position of strength, look towards those who are not and use the
+            strength to lift them up.
           </p>
         </li>
       </ul>
