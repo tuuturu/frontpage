@@ -1,6 +1,12 @@
 <template>
   <div class="AboutView">
     <div class="frame">
+      <h2>Mission statement</h2>
+      <p>
+        Convince the world of the importance of accountability and prove how
+        transparency is the key to a better world.
+      </p>
+
       <h2>Origin</h2>
       <p>
         Tuuturu is Maori and means "real". To be real is to be honest. It is the
@@ -73,6 +79,10 @@ export default defineComponent({
 
 span.bold {
   font-weight: bold;
+}
+
+p {
+  line-height: 2rem;
 }
 
 li:not(:first-child) {
