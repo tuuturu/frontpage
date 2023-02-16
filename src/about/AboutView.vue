@@ -102,4 +102,10 @@ li:not(:first-child) {
 li > p {
   display: inline;
 }
+
+@media only screen and (max-width: 768px) {
+  .frame {
+    width: 90%;
+  }
+}
 </style>
