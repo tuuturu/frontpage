@@ -1,6 +1,10 @@
 <template>
   <div class="frame">
-    <h1>Tuuturu</h1>
+    <h1>
+      <a class="logo" href="javacript:void(0)" @click="$router.push('/')">
+        Tuuturu
+      </a>
+    </h1>
 
     <div>
       <router-link to="/">Home</router-link>
@@ -39,6 +43,11 @@ a:hover {
 }
 a:active {
   color: #0a0a0a;
+}
+
+a.logo {
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .frame {
