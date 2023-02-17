@@ -4,6 +4,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: ['main']
+    paths: ['**.vue', '**.html', '**.css', '**.svg', '**.ts', '**.js']
 
 jobs:
   build:
