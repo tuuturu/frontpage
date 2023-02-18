@@ -2,10 +2,21 @@
   <div class="AboutView">
     <div class="frame">
       <h2>Mission statement</h2>
-      <p>
-        Convince the world of the importance of accountability and prove how
-        transparency is the key to a better world.
+      <p class="mission-statement">
+        Pave the way for a more data driven world.
       </p>
+
+      <h2>Objectives</h2>
+      <div class="objectives">
+        <Objective
+          title="Become a trusted name in the fight for better world"
+          description="For trust, there has to be effect"
+        />
+        <Objective
+          title="Make key data available to everyone"
+          description="People should be able to make informed decisions"
+        />
+      </div>
 
       <h2>Origin</h2>
       <p>
@@ -39,8 +50,8 @@
           <span class="bold">Bold</span>
           <p>
             - We dare to experiment, and when we do, we observe and understand
-            the consequences. Fucking up is celebrated, for without the mistake,
-            we would be robbed of resulting information.
+            the result. Fucking up is celebrated, for without the mistake, we
+            would be robbed of resulting information.
           </p>
         </li>
 
@@ -60,9 +71,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import Objective from './components/Objective.vue'
 
 export default defineComponent({
   name: 'AboutView',
+  components: { Objective },
 })
 </script>
 
@@ -95,12 +108,33 @@ p {
   line-height: 2rem;
 }
 
+p.mission-statement {
+  width: 100%;
+
+  font-style: italic;
+  text-align: center;
+}
+
 li:not(:first-child) {
   margin-top: 1rem;
 }
 
 li > p {
   display: inline;
+}
+
+.objectives {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 2rem 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Objective {
+  width: 32%;
 }
 
 @media only screen and (max-width: 768px) {
