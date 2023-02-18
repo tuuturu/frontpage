@@ -1,0 +1,27 @@
+name: Integration
+
+on:
+  workflow_dispatch: {}
+  pull_request:
+    types: ['opened']
+  push:
+    branches: ['main']
+    paths: ['**.vue', '**.html', '**.css', '**.svg', '**.ts', '**.js']
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - run: npm ci
+      - run: make ci
+      - run: make build
